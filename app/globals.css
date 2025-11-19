@@ -1,37 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-.carousel{
-    display: flex;
-    overflow-x: auto;
-    gap: 1em;
+.animate-scroll{
+    animation: scroll 20s linear infinite;
 }
-
-.carousel::-webkit-scrollbar{
-    display:none;
-}
-
-.group{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    gap:1em;
-    animation: spinner 30s infinite linear;
-}
-
-.card{
-    flex:0 0 5em;
-    font-size: 3rem;
-    border-radius: .2em;
-    text-align: center;
-}
-
-@keyframes spinner {
-    from {
-        translate: 0;
+@keyframes scroll{
+    from{
+        transform:translateX(0);
     }
-    to {
-        translate: -100%;
-    
+    to{
+        transform:translateX(-100%);
     }
 }

@@ -1,4 +1,5 @@
 "use client"
+import About from "@/components/About";
 import Header from "@/components/common/Header";
 import HeroSection from "@/components/common/Hero-Section";
 import LogoSlider from "@/components/LogoSlider";
@@ -10,6 +11,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen  items-center justify-center bg-zinc-50 font-sans">
         <HeroSection/>
         <LogoSlider/>
+        <About/>
     </div>
   );
 }
