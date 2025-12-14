@@ -1,0 +1,54 @@
+@import "tailwindcss";
+::-webkit-scrollbar {
+            width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #3D348B;
+}
+@theme {
+  /* Colors */
+  --color-primary: #3D348B;              /* Purple/Blue from logo text */
+  --color-primary-hover: #2E2670;
+  --background-color: #110D1D;
+
+  --color-accent: #F57C00;               /* Orange from globe icon */
+  --color-accent-hover: #E65100;
+
+  --color-background-light: #FFFFFF;
+  --color-background-dark: #0F172A;      /* Deep slate blue / black */
+
+  --color-surface-light: #F8FAFC;
+  --color-surface-dark: #1E293B;         /* Cards / Navbar */
+
+  --color-text-light: #64748B;
+  --color-text-dim: #94A3B8;
+
+  /* Fonts */
+  --font-display: "Manrope", sans-serif;
+
+  /* Border Radius */
+  --radius: 1rem;
+  --radius-lg: 2rem;
+  --radius-xl: 3rem;
+  --radius-full: 9999px;
+
+  /* Background Gradients */
+  --bg-hero-glow: radial-gradient(
+    circle at 50% 50%,
+    rgba(61, 52, 139, 0.15) 0%,
+    rgba(15, 23, 42, 0) 50%
+  );
+
+  --bg-hero-glow-light: radial-gradient(
+    circle at 50% 50%,
+    rgba(61, 52, 139, 0.08) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
+}
